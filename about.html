@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width,initial-scale=1"/>
+        <title>About</title>
+        <link rel = "stylesheet" href = "styles.css"/>
+    </head>
+    <body>
+        <header class = "topbar">
+            <div class = "wrap">
+                <div class = "appTitle">Earnings Surprise Tracker</div>
+                <nav class = "nav">
+                    <a href = "index.html">Home</a>
+                    <a href = "analyze.html">Analyze</a>
+                    <a href = "about.html" class = "activePage">About</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class = "wrap">
+            <section class = "card">
+                <h1>About</h1>
+                <br>
+                <h3>App Overview:</h3>
+                <p>
+                    The Earnings Surprise Tracker is a web application designed to help retail investors and traders quickly identify which upcoming earnings reports are most likely to move the market. The app aggregates data from Alpha Vantage and computes a 'surprise signal' that shows how much a company's past earnings have deviated from expectations. This allows users to easily see which stocks have historically produced large post-earnings reactions.
+                </p>
+                <h3>How it Works / Data Sources:</h3>
+                <p>
+                    Our system pulls earnings data from the Alpha Vantage API, stores it in a Supabase database, and displays it through a clean, interactive interface.
+                </p>
+                <h3>Limitations:</h3>
+                <p>Some data may be missing or estimated. For informational purposes only - not financial advice.</p>
+            </section>
+        </main>
+    </body>
+</html>

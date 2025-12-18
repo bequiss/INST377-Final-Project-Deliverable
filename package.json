@@ -1,0 +1,27 @@
+{
+  "name": "earnings-surprise-tracker",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.88.0",
+    "papaparse": "^5.5.3",
+    "vercel": "^50.1.2"
+  },
+  "version": "1.0.0",
+  "main": "analyze.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bequiss/INST377-Final-Project-Deliverable.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bequiss/INST377-Final-Project-Deliverable/issues"
+  },
+  "homepage": "https://github.com/bequiss/INST377-Final-Project-Deliverable#readme",
+  "description": ""
+}

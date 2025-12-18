@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width,initial-scale=1"/>
+        <title>Analyze Ticker</title>
+        <link rel = "stylesheet" href = "styles.css"/>
+        <script defer src = "https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+        <script defer src = "https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+        <script defer src = "analyze.js"></script>
+    </head>
+
+    <body>
+        <header class = "topbar">
+            <div class = "wrap">
+                <div class = "appTitle">Earnings Surprise Tracker</div>
+                <nav class = "nav">
+                    <a href = "index.html">Home</a>
+                    <a href = "analyze.html" class="activePage">Analyze</a>
+                    <a href = "about.html">About</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class = "wrap">
+            <section class = "card">
+                <h1>Analyze Ticker</h1>
+
+                <form class = "row" action = "analyze.html" method = "GET">
+                    <div class = "field">
+                        <label for = "symbol">Ticker</label>
+                        <input id = "symbol" name = "symbol" placeholder="AAPL"/>
+                    </div>
+
+                    <div class = "field">
+                        <label></label>
+                        <button class = "button" type = "submit">Analyze</button>
+                    </div>
+
+                    <div class = "field">
+                        <label></label>
+                        <button class = "button button-secondary" type = "submit" name = "refresh" value = "1">Refresh Calendar</button>
+                    </div>
+                </form>
+                <p id="metaLine"></p>
+            </section>
+
+            <section class="card">
+                <details open class="detailsToggle">
+                    <summary class="button button-secondary toggleSummary">
+                        <span class="whenOpen">Hide Earnings Calendar</span>
+                        <span class="whenClosed">Show Earnings Calendar</span>
+                    </summary>
+
+                    <h2>Upcoming Earnings</h2>
+                    <div class="tableWrap">
+                        <table class="table" id="calendarTable">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Symbol</th>
+                                    <th>Name</th>
+                                    <th>Estimate</th>
+                                    <th>Currency</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+            </section>
+
+            <section class = "card">
+                <h2>Recent Quartlerly EPS Surprise: <span id = "tickerLabel">-</span></h2>
+                <div class = "tableWrap">
+                    <table class = "table" id = "earningsTable">
+                        <thead>
+                            <tr>
+                                <th>Reported Date</th>
+                                <th>Reported EPS</th>
+                                <th>Estimated EPS</th>
+                                <th>Surprise %</th>
+                                <th>Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <div class = "chartWrap">
+                    <canvas id = "surpriseChart" height = "120"></canvas>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0b0f19;
+  color: #e7edf6;
+}
+* { box-sizing: border-box; }
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.topbar {
+  border-bottom: 1px solid #24324a;
+  background: rgba(18, 26, 42, 0.7);
+}
+
+.topbar .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.appTitle {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.nav a {
+  color: #a9b6c7;
+  text-decoration: none;
+  margin-left: 12px;
+  padding: 8px 10px;
+  border-radius: 0px;
+}
+
+.nav a.activePage {
+  color: #e7edf6;
+  background: rgba(47, 111, 237, 0.18);
+}
+
+.card {
+  background: #121a2a;
+  border: 1px solid #24324a;
+  border-radius: 0px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+h1, h2 {
+  margin: 0 0 12px 0;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.field {
+  min-width: 160px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  color: #a9b6c7;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 0px;
+  border: 1px solid #24324a;
+  background: #0e1525;
+  color: #e7edf6;
+}
+
+button, .button {
+  display: inline-block;
+  border: 1px solid transparent;
+  background: #2f6fed;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.detailsToggle > summary {
+  list-style: none;
+  margin-bottom: 12px
+}
+
+.detailsToggle[open] .whenClosed {
+  display: none;
+}
+
+.detailsToggle:not([open]) .whenOpen {
+  display: none;
+}
+
+.button.button-secondary {
+  background: #23314b;
+  border-color: #24324a;
+  color: #e7edf6;
+  border-radius: 0px;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border-bottom: 1px solid #24324a;
+  padding: 10px 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table th {
+  color: #a9b6c7;
+  font-weight: 600;
+}
+
+.chartWrap {
+  margin-top: 12px;
+}
