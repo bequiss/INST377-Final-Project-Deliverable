@@ -26,6 +26,6 @@ Mobile responsiveness is partially supported, but the primary target is desktop 
 
 ## Developer Manual
 
-See the [Developer Manual](docs/developer-manual.md) for setup instructions, API documentation, known limitations, and future development plans.
+See the [Developer Manual](developer-manual.md) for setup instructions, API documentation, known limitations, and future development plans.
 
 ---
